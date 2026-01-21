@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Inputs & textarea */
+input,
+textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* Radio & checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="A2.css">
+    <title>Activity 2</title>
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="checkbox" onclick="password.type = this.checked ? 'text' : 'password'"> Show Password
+            <br><br>
+
+            <label for="age">Enter Age:</label>
+            <input type="number" id="age" name="age" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>    
+            <br><br>
+
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label>Select your hobbies:</label><br>
+            <input type="checkbox" id="coding" name="coding" required>
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="reading" name="reading" required>
+            <label for="reading">Reading</label><br>    
+            <input type="checkbox" id="gaming" name="gaming" required>
+            <label for="gaming">Gaming</label><br>
+            <input type="checkbox" id="traveling" name="traveling" required>
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" id="sports" name="sports" required>
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="music" required>
+            <label for="music">Music</label>
+            <br><br>
+            
+            <label for="About Yourself">About Yourself:</label><br>
+            <textarea id="about" name="about" rows="4" cols="50" required></textarea>
+            <br><br>
+    </div>
+</body>
+</html>
