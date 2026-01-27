@@ -1,0 +1,121 @@
+/* GENERAL */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #fd0db5, #c510f2);
+    color: white;
+    padding-top: 80px;
+}
+
+.hero-content {
+    animation: fadeSlideDown 1.2s ease-in-out;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-weight: bold;
+    position: relative;
+    animation: fadeIn 1s ease-in;
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+/* TICKET CARD */
+.ticket-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeUp 0.8s ease-in-out;
+}
+
+.ticket-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* PRICE */
+.price {
+    color: #198754;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* BUTTON */
+.ticket-card button {
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.ticket-card button:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    animation: fadeIn 1.2s ease-in;
+}
+
+/* ANIMATIONS */
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* MOBILE */
+@media (max-width: 575px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .ticket-card {
+        animation-delay: 0.2s;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .hero-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}

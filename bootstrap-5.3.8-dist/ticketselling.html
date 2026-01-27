@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketHub</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🎟 TicketHub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#tickets">Tickets</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+    <div class="container h-100">
+        <div class="row align-items-center h-100">
+            
+            <!-- TEXT -->
+            <div class="col-12 col-lg-6 text-center text-lg-start hero-content">
+                <h1 class="display-4">Buy Tickets Easily</h1>
+                <p class="lead">Concerts • Sports • Movies</p>
+                <a href="#tickets" class="btn btn-warning btn-lg">Browse Tickets</a>
+            </div>
+
+            <!-- IMAGE / PLACEHOLDER -->
+            <div class="col-12 col-lg-6 d-none d-lg-block text-center">
+                <img src="profile.jpg" class="img-fluid" alt="Tickets">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- TICKETS -->
+<section class="py-5" id="tickets">
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Available Events</h2>
+                <p class="text-muted">Choose your event and book instantly</p>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <!-- CARD 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card ticket-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">🎵 Music Concert</h5>
+                        <p class="card-text">Live band & DJ night</p>
+                        <h4 class="price">₱1,200</h4>
+                        <button class="btn btn-primary w-100">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card ticket-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">🏀 Basketball Game</h5>
+                        <p class="card-text">Final championship</p>
+                        <h4 class="price">₱850</h4>
+                        <button class="btn btn-primary w-100">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="card ticket-card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">🎬 Movie Premiere</h5>
+                        <p class="card-text">Exclusive screening</p>
+                        <h4 class="price">₱450</h4>
+                        <button class="btn btn-primary w-100">Buy Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">© 2026 TicketHub. All Rights Reserved.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
