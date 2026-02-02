@@ -8,51 +8,201 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center my-5">
-            <div class="alert alert-primary" role="alert">
-                <h1>Welcome to Bootstrap 5.3.8</h1>
-    </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title 1</h5>
-                        <p class="card-text">This is a simple card example using Bootstrap 5.3.8.</p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title 2</h5>
-                        <p class="card-text">This is another card example using Bootstrap 5.3   .8.</p>
-                        <a href="#" class="btn btn-outline-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-    <div class="container text-center">
- <div class="container text-center">
-  <div class="row row-cols-2">
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-    <div class="col">Column</div>
-  </div>
-</div>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+    <div class="form-container">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br><br>
 
-<button type="button" class="btn btn-link">Link</button>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="checkbox" onclick="password.type = this.checked ? 'text' : 'password'"> Show Password
+        <br><br>
+
+        <label for="conform_password">Confirm Password:</label>
+        <input type="password" id="conform_password" name="conform_password" required>
+        <input type="checkbox" onclick="conform_password.type = this.checked ? 'text' : 'password'"> Show Confirm Password
+        <br><br>
+
+        <label for="age">Enter Age:</label>
+        <input type="number" min="1" max="120" id="age" name="age" required>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+<option value="afghanistan">Afghanistan</option>
+<option value="albania">Albania</option>
+<option value="algeria">Algeria</option>
+<option value="andorra">Andorra</option>
+<option value="angola">Angola</option>
+<option value="antigua_and_barbuda">Antigua and Barbuda</option>
+<option value="argentina">Argentina</option>
+<option value="armenia">Armenia</option>
+<option value="australia">Australia</option>
+<option value="austria">Austria</option>
+<option value="azerbaijan">Azerbaijan</option>
+
+<option value="bahamas">Bahamas</option>
+<option value="bahrain">Bahrain</option>
+<option value="bangladesh">Bangladesh</option>
+<option value="barbados">Barbados</option>
+<option value="belarus">Belarus</option>
+<option value="belgium">Belgium</option>
+<option value="belize">Belize</option>
+<option value="benin">Benin</option>
+<option value="bhutan">Bhutan</option>
+<option value="bolivia">Bolivia</option>
+<option value="bosnia_and_herzegovina">Bosnia and Herzegovina</option>
+<option value="botswana">Botswana</option>
+<option value="brazil">Brazil</option>
+<option value="brunei">Brunei</option>
+<option value="bulgaria">Bulgaria</option>
+<option value="burkina_faso">Burkina Faso</option>
+<option value="burundi">Burundi</option>
+
+<option value="cambodia">Cambodia</option>
+<option value="cameroon">Cameroon</option>
+<option value="canada">Canada</option>
+<option value="cape_verde">Cape Verde</option>
+<option value="central_african_republic">Central African Republic</option>
+<option value="chad">Chad</option>
+<option value="chile">Chile</option>
+<option value="china">China</option>
+<option value="colombia">Colombia</option>
+<option value="comoros">Comoros</option>
+<option value="costa_rica">Costa Rica</option>
+<option value="croatia">Croatia</option>
+<option value="cuba">Cuba</option>
+<option value="cyprus">Cyprus</option>
+<option value="czech_republic">Czech Republic</option>
+
+<option value="denmark">Denmark</option>
+<option value="djibouti">Djibouti</option>
+<option value="dominica">Dominica</option>
+<option value="dominican_republic">Dominican Republic</option>
+
+<option value="ecuador">Ecuador</option>
+<option value="egypt">Egypt</option>
+<option value="el_salvador">El Salvador</option>
+<option value="estonia">Estonia</option>
+<option value="eswatini">Eswatini</option>
+<option value="ethiopia">Ethiopia</option>
+
+<option value="fiji">Fiji</option>
+<option value="finland">Finland</option>
+<option value="france">France</option>
+
+<option value="gabon">Gabon</option>
+<option value="gambia">Gambia</option>
+<option value="georgia">Georgia</option>
+<option value="germany">Germany</option>
+<option value="ghana">Ghana</option>
+<option value="greece">Greece</option>
+<option value="grenada">Grenada</option>
+<option value="guatemala">Guatemala</option>
+<option value="guinea">Guinea</option>
+<option value="guyana">Guyana</option>
+
+<option value="haiti">Haiti</option>
+<option value="honduras">Honduras</option>
+<option value="hungary">Hungary</option>
+
+<option value="iceland">Iceland</option>
+<option value="india">India</option>
+<option value="indonesia">Indonesia</option>
+<option value="iran">Iran</option>
+<option value="iraq">Iraq</option>
+<option value="ireland">Ireland</option>
+<option value="israel">Israel</option>
+<option value="italy">Italy</option>
+
+<option value="jamaica">Jamaica</option>
+<option value="japan">Japan</option>
+<option value="jordan">Jordan</option>
+
+<option value="kazakhstan">Kazakhstan</option>
+<option value="kenya">Kenya</option>
+<option value="kuwait">Kuwait</option>
+
+<option value="laos">Laos</option>
+<option value="latvia">Latvia</option>
+<option value="lebanon">Lebanon</option>
+<option value="lesotho">Lesotho</option>
+<option value="liberia">Liberia</option>
+<option value="libya">Libya</option>
+<option value="lithuania">Lithuania</option>
+<option value="luxembourg">Luxembourg</option>
+
+<option value="madagascar">Madagascar</option>
+<option value="malaysia">Malaysia</option>
+<option value="maldives">Maldives</option>
+<option value="mali">Mali</option>
+<option value="malta">Malta</option>
+<option value="mexico">Mexico</option>
+<option value="moldova">Moldova</option>
+<option value="mongolia">Mongolia</option>
+<option value="morocco">Morocco</option>
+<option value="mozambique">Mozambique</option>
+<option value="myanmar">Myanmar</option>
+
+<option value="namibia">Namibia</option>
+<option value="nepal">Nepal</option>
+<option value="netherlands">Netherlands</option>
+<option value="new_zealand">New Zealand</option>
+<option value="nicaragua">Nicaragua</option>
+<option value="nigeria">Nigeria</option>
+<option value="north_korea">North Korea</option>
+<option value="norway">Norway</option>
+
+<option value="oman">Oman</option>
+
+<option value="pakistan">Pakistan</option>
+<option value="panama">Panama</option>
+<option value="paraguay">Paraguay</option>
+<option value="peru">Peru</option>
+<option value="philippines">Philippines</option>
+<option value="poland">Poland</option>
+<option value="portugal">Portugal</option>
+
+<option value="qatar">Qatar</option>
+
+<option value="romania">Romania</option>
+<option value="russia">Russia</option>
+<option value="rwanda">Rwanda</option>
+
+<option value="saudi_arabia">Saudi Arabia</option>
+<option value="singapore">Singapore</option>
+<option value="south_africa">South Africa</option>
+<option value="south_korea">South Korea</option>
+<option value="spain">Spain</option>
+<option value="sri_lanka">Sri Lanka</option>
+<option value="sweden">Sweden</option>
+<option value="switzerland">Switzerland</option>
+
+<option value="thailand">Thailand</option>
+<option value="turkey">Turkey</option>
+
+<option value="uk">United Kingdom</option>
+<option value="usa">United States</option>
+
+<option value="vietnam">Vietnam</option>
+
+<option value="yemen">Yemen</option>
+<option value="zambia">Zambia</option>
+<option value="zimbabwe">Zimbabwe</option>
+            
+        <br><br>
+
+        <label for="gender">Select Gender:</label>
+        <radio id="male" name="gender" value="male">Male</radio>
+        <radio id="female" name="gender" value="female">Female</radio>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
